@@ -247,11 +247,14 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "login",
-                      "onClick": "{{validate_login.validate_login()}}",
+                      "onClick": "{{validate_login.validate_login() == 'true' ? navigateTo('entry'):navigateTo('Page1')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
                           "key": "disabledWhenInvalid"
+                        },
+                        {
+                          "key": "onClick"
                         }
                       ],
                       "displayName": "Button",

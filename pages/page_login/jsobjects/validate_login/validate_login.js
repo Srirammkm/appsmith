@@ -3,7 +3,11 @@ export default {
 		var db_passwd = validateuser.data;
 		console.log(db_passwd)
 		if (db_passwd["values"][0] == passwd.inputText){
-			return true 
+			return true
+		}else{
+			return false
 		}
 	}
 }
+	
+	
